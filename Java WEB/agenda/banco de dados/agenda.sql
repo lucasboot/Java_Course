@@ -9,3 +9,17 @@ create table contatos(
 );
 show tables;
 describe contatos;
+
+/* CRUD CREATE */ 
+insert into contatos (nome, fone, email) values ('Lucas F', '9999999', 'lucas@teste.com');
+
+/* CRUD READ */
+select * from contatos;
+select * from contatos order by nome;
+select * from contatos where idcon=2;
+
+/* CRUD UPDATE */
+update contatos set nome='Dona Arca' where idcon=2;
+
+/* CRUD DELETE */
+delete from contatos where idcon=2;
